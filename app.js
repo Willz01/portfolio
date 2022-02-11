@@ -36,6 +36,9 @@ app.use('/about', (req, res, next) => {
 app.use('/projects', (req, res, next) => {
   res.sendFile(path.join(__dirname, '/frontend/public/views/projects.html'))
 })
+app.use('/education', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '/frontend/public/views/education.html'))
+})
 
 
 
