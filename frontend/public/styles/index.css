@@ -8,9 +8,7 @@ main {
   flex: 1;
 }
 
-#footer {
-  margin-top: 5px;
-}
+
 
 .card:hover {
   background-color: #a3c4db;
