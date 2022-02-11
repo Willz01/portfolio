@@ -1,6 +1,6 @@
 # Web base personal Curriculum vitae
 
-# Endpoints
+# 1) Endpoints
 
 > '/' is severed using express.static() while for other endpoints, their corresponding files are sent over the corresponding request's response.
 
@@ -14,12 +14,18 @@
 | '/projects'  | [/frontend/public/views/projects.html](https://github.com/Willz01/portfolio/blob/main/frontend/public/views/projects.html "projects.html")    | Projects      |
 | '/interests' | [/frontend/public/views/interests.html](https://github.com/Willz01/portfolio/blob/main/frontend/public/views/interests.html "interests.html") | Interest      |
 
+# 2) Design (Wireframe)
+## Web
+![img.png](frontend/public/img/web-wireframe.png)
+
+## Web and Mobile
+![img.png](frontend/public/img/web-mobile-wireframe.png)
 # Sneak pics
 [Launching soon, need rest now!](https://wills-ekanem.xyz "MY WEBSITE")
-### DECK SCRREN --desktop
+### DECK SCRREN --web
 ![img.png](frontend/public/img/screenshot.png)
 
-### HOME SCRREN --desktop
+### HOME SCRREN --web
 ![img.png](frontend/public/img/screenshot2.png)
 
 ### DECK SCRREN --mobile
