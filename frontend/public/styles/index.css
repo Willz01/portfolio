@@ -12,6 +12,7 @@ main {
 
 .card:hover {
   background-color: #a3c4db;
+  box-shadow: 5px 5px;
 }
 
 .hidden {

@@ -25,12 +25,16 @@ app.use('/interests', (req, res, next) => {
   res.sendFile(path.join(__dirname, '/frontend/public/views/interests.html'))
 })
 
+app.use('/skills', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '/frontend/public/views/skills.html'))
+})
+
 app.use('/about', (req, res, next) => {
   res.sendFile(path.join(__dirname, '/frontend/public/views/about.html'))
 })
 
-app.use('/recent-projects', (req, res, next) => {
-  res.sendFile(path.join(__dirname, '/frontend/public/views/about.html'))
+app.use('/projects', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '/frontend/public/views/projects.html'))
 })
 
 
