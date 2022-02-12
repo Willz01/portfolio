@@ -1,26 +1,27 @@
 
 class course {
-  constructor(course_name, description, tags = [], course_code, credits, year) {
+  constructor(course_name, description, tags = [], course_code, credits, year, links = []) {
     this.course_name = course_name;
     this.description = description;
     this.tags = tags;
     this.course_code = course_code;
     this.credits = credits;
     this.year = year;
+    this.links = links;
   }
 }
 
 let courses = [
-  new course('Software Development for the Web', 'Frontend development with Javascript, HTML, CCS and other 3rd party frameworks. Backend development, APIs with NodeJS and express + database work.', ['nodeJS', 'expressJS', 'sqlite', 'API', 'Full Stack', 'Group work'], 'DA377C', 7.5, 2022),
+  new course('Software Development for the Web', 'Frontend development with Javascript, HTML, CCS and other 3rd party frameworks. Backend development, APIs with NodeJS and express + database work. <div class="col">Repo: <a href="https://github.com/Willz01/breakout-js" target="_blank">Web arcade -breakout</a></div>', ['nodeJS', 'expressJS', 'sqlite', 'API', 'Full Stack', 'Group work'], 'DA377C', 7.5, 2022),
   new course('Bachelor Thesis in Computer Science', 'Currently doing my thesis in <i>Identifying malicious nodes in Peer-to-Peer networks.</i>', ['thesis', 'P2P', 'Distributed networks', 'python'], 'DA399C', 15.0, 2022),
   new course('Entrepreneurship and Innovation', 'We worked in group of 3 members on a innovative project that followed a structured and formatted methodology.', ['Entrepreneurship', 'innovation', 'group innovation'], 'IE301C', 7.5, 2021),
-  new course('Software Engineering 2', 'I led as a Project manager in a group of 15 students to develop and simulate a smart home evironment, with both web and mobile clients.', ['Smart-house', 'Agile Development', 'Network', 'Service and Resources', 'CI/CD', 'JAX/RS'], 'DA326C', 15.0, 2021),
-  new course('Network Applications', 'Studies in Remote Method Innovation frameworks in Java, APIS , TCP and UCP networking.', ['RPC/RMI', 'API`s', 'TCP', 'UDP', 'Networking', 'Java', 'javascript'], 'DA374F', 7.5, 2021),
-  new course('Software Engineering 1', 'We as a group development an android app, which makes it possible for people to sell back old/damaged electronics parts to state collectors.', ['Android', 'Agile Development', 'Testing'], 'DA216C', 7.5, 2021),
+  new course('Software Engineering 2', 'I led as a Project manager in a group of 15 students to develop and simulate a smart home evironment, with both web and mobile clients. <div class="col">Organisation: <a href="https://github.com/homedork-se2" target="_blank">HomeDork HQ</a></div> <div class="col">Server repo: <a href="https://github.com/homedork-se2/hd-server" target="_blank">HomeDork´s Server</a></div> <div class="col">API repo: <a href="https://github.com/homedork-se2/hd-API" target="_blank">HomeDork´s API</a></div>', ['Smart-house', 'Agile Development', 'Network', 'Service and Resources', 'CI/CD', 'JAX/RS', 'Maven', 'MySQL', 'SQLite', 'JSON', 'TCP', 'HTTP', 'AES encryption'], 'DA326C', 15.0, 2021, ['https://github.com/homedork-se2', 'https://github.com/homedork-se2/hd-server', 'https://github.com/homedork-se2/hd-API']),
+  new course('Network Applications', 'Studies in Remote Method Innovation frameworks in Java, APIS , TCP and UCP networking.', ['RPC/RMI', 'API`s', 'TCP', 'UDP', 'Networking', 'Java', 'Javascript', 'JAX-RS', 'Spring'], 'DA374F', 7.5, 2021),
+  new course('Software Engineering 1', 'We as a group development an android app, which makes it possible for people to sell back old/damaged electronics parts to state collectors. <div class="col">Repo: <a href="https://github.com/Willz01/E-waste-management" target="_blank">E-waste-mangement</a></div>', ['Android', 'Agile Development', 'Testing'], 'DA216C', 7.5, 2021),
   new course('Computer Security', 'Cryptographic techniques, hashing, ensuring internet security with both public and private keys encryption. Certicate Authorities and digital signatures', ['encryption', 'decryption', 'public & private key cryptography', 'Java'], 'DA273B', 7.5, 2021),
-  new course('Development towards Mobile Platforms', 'A group based course were we developed and android app for this first time. We developed Outdork, a mobile app that allows seaching for outdoor activities like hiking and fishing simpler', ['android', 'group work', 'kotlin', 'Java'], 'DA224C', 7.5, 2021),
+  new course('Development towards Mobile Platforms', 'A group based course were we developed and android app for this first time. We developed Outdork, a mobile app that allows seaching for outdoor activities like hiking and fishing simpler. <div class="col">Repo: <a href="https://github.com/Willz01/Outdork" target="_blank">Outdork</a></div>', ['android', 'group work', 'kotlin', 'Java', 'gradle'], 'DA224C', 7.5, 2021),
   new course('Data Communication', 'Single and Multi threaded servers were studied under this course, HTTP, TCP, UDP and other internet communication protocols looked into.', ['TCP', 'Packets', 'Mutli-thread Servers', 'Java'], 'DA270B', 7.5, 2021),
-  new course('Algorithms and Data Structures', 'Big-OH complexity, space complexity, complexity of different sorting algorithms. We had to make a lab project and report analysis of comparing different sorting algotithms.', ['sorting', 'algorithm comparison', 'Big-Oh', 'time & space complexity', 'Java', 'Reports'], 'DA256C', 7.5, 2020),
+  new course('Algorithms and Data Structures', 'Big-OH complexity, space complexity, complexity of different sorting algorithms. We had to make a lab project and report analysis of comparing different sorting algotithms.', ['sorting', 'algorithm comparison', 'Big-Oh', 'Time & space complexity', 'Binary search', 'Java', 'Reports', 'bubble sort', 'quick sort', 'merge sort', 'insertion sort', 'selection sort'], 'DA256C', 7.5, 2020),
   new course('Digital Electronic System Design', 'Electronis system design with arduino and other electronic components. Required a project work were me and Sam(a classmate) built a security lock system.', ['arduino', 'wires'], 'DT223B', 7.5, 2020),
   new course('Discrete Mathematics', 'Covered algebra and other mathemcatical concepts applied in computer science.', ['algebra', 'matrix', 'Differentiation & Calculus'], 'MA252B', 7.5, 2020),
   new course('Operating Systems', 'Studied threading, asyn IO, deadlocks and lock & acquire labs with the ReentrantLock Java package.', ['Thread', 'File I/O', 'Deadlocks', 'Philosophers problem'], 'DT271C', 7.5, 2020),
