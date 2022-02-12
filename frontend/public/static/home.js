@@ -1,5 +1,3 @@
-console.log('gegeg');
-
 document.querySelector('#download-cv').addEventListener('click', (event) => {
-  alert('Resume Loading')
+  alert('Resume Loading, Click OK!')
 })
